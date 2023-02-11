@@ -1,0 +1,46 @@
+.animated {
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-bottom:60px;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ }
+ img{
+    width:1530px; 
+ }
+ 
+ @media only screen and (max-width: 900px) {
+    img {
+        width:auto;
+        height: 600px;
+     }
+  }
+ 
+ @-webkit-keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+ }
+
+ @keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-1000px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+ 
+ .fadeInLeft {
+ -webkit-animation-name: fadeInLeft;
+ animation-name: fadeInLeft;
+ } 
